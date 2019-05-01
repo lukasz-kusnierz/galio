@@ -1,11 +1,13 @@
 import React from 'react';
-import Icons, { createIconSetFromIcoMoon } from 'react-native-vector-icons';
+import { createIconSetFromIcoMoon } from 'react-native-vector-icons';
 import PropTypes from 'prop-types';
 
 import GalioTheme, { withGalio } from './theme';
 import galioConfig from './fonts/galio';
 
-Icons.Galio = createIconSetFromIcoMoon(galioConfig, 'Galio');
+const Icons = {
+  Galio: createIconSetFromIcoMoon(galioConfig, 'Galio')
+};
 
 class Icon extends React.Component {
 
